@@ -31,6 +31,15 @@
     overflow-x:hidden;
   }
   button{font-family:inherit;cursor:pointer;border:none}
+  a.home-link{
+    position:fixed;left:14px;top:14px;z-index:200;
+    padding:9px 16px;font-size:16px;font-weight:700;border-radius:18px;
+    background:var(--cream);color:var(--ink);text-decoration:none;
+    box-shadow:0 4px 0 var(--paper-side), 0 8px 14px rgba(60,90,140,.18);
+    transition:transform .1s ease, box-shadow .1s ease;
+  }
+  a.home-link:hover{filter:brightness(1.04)}
+  a.home-link:active{transform:translateY(3px);box-shadow:0 1px 0 var(--paper-side),0 4px 8px rgba(60,90,140,.18)}
   .hidden{display:none !important}
 
   /* ---------- toy buttons ---------- */
@@ -183,6 +192,7 @@
 </style>
 </head>
 <body>
+<a class="home-link" href="/index.html">← All Games</a>
 
 <!-- ================= MENU ================= -->
 <div id="menu">
